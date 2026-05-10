@@ -1,4 +1,5 @@
 /*Adding fractions*/
+#include <stdio.h>
 
 int main(void){
     int numb1, numb2, denom1, denom2, result_num, result_denom;
