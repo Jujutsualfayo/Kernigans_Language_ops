@@ -10,7 +10,7 @@ int main(void){
     printf("Lastly your age sir: ");
     scanf("%d", &age);
 
-    printf("\nName: %s\n", name);
+    printf("Name: %s\n", name);
     printf("Height: %.2f\n", height);
     printf("Age: %d\n", age);
 
