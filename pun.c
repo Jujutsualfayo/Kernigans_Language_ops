@@ -2,17 +2,13 @@
 #include <stdio.h>
 
 int main(void){
-    int numb1, numb2, denom1, denom2, result_num, result_denom;
-    printf("Input first fraction: ");
-    scanf("%d/%d", &numb1, &denom1);
-    printf("Input second fraction: ");
-    scanf("%d/%d", &numb2, &denom2);
-
-    result_num = numb1 * denom2 + numb2 * denom1;
-    result_denom = denom1 * denom2;
-    printf("The answer is: %d/%d", result_num, result_denom);
+    char name; int age, height; 
+    printf("Whats your name? ");
+    scanf("%c", &name);
+    printf("Tell me your height: ");
+    scanf("%d", &height);
+    printf("Lastly your age sir: ");
+    scanf("%d", &age);
 
     return 0;
 }
-
-    
