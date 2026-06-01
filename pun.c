@@ -2,16 +2,17 @@
 #include <stdio.h>
 
 int main(void){
-    char name; int age, height; char result_xyz;
+    char name[50]; int age, height; 
     printf("Whats your name? ");
-    scanf("%c", &name);
+    scanf("%s", &name);
     printf("Tell me your height: ");
-    scanf("%d", &height);
+    scanf("%f", &height);
     printf("Lastly your age sir: ");
     scanf("%d", &age);
 
-result_xyz = name, age, height;
-printf("Result of your answers of %c%d%d is: ", name, height, age);
+    printf("Name: %s\n", name);
+    printf("Height: %.2f\n", height);
+    printf("Age: %d\n", age);
 
-return 0;
+    return 0;
 }
