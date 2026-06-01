@@ -4,7 +4,7 @@
 int main(void){
     char name[50]; int age; float height; 
     printf("Whats your name? ");
-    scanf("%s", &name);
+    scanf("%s", name);
     printf("Tell me your height: ");
     scanf("%f", &height);
     printf("Lastly your age sir: ");
