@@ -1,18 +1,14 @@
-/*Adding fractions*/
 #include <stdio.h>
 
-int main(void){
-    char name[50]; int age; float height; 
-    printf("Whats your name? ");
-    scanf("%s", name);
-    printf("Tell me your height: ");
-    scanf("%f", &height);
-    printf("Lastly your age sir: ");
-    scanf("%d", &age);
+int main(void)
+{
+    char full_name[100];
 
-    printf("Name: %s\n", name);
-    printf("Height: %.2f\n", height);
-    printf("Age: %d\n", age);
+    printf("Enter your full name: ");
+
+    fgets(full_name, sizeof(full_name), stdin);
+
+    printf("Welcome %s", full_name);
 
     return 0;
 }
