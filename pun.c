@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main(void){
-    char name; int age, height; 
+    char name; int age, height; char result_xyz;
     printf("Whats your name? ");
     scanf("%c", &name);
     printf("Tell me your height: ");
@@ -10,5 +10,8 @@ int main(void){
     printf("Lastly your age sir: ");
     scanf("%d", &age);
 
-    return 0;
+result_xyz = name, age, height;
+printf("Result of your answers of %c%d%d is: ", name, height, age);
+
+return 0;
 }
