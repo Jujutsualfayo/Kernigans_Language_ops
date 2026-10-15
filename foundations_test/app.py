@@ -1,5 +1,19 @@
-fruits = ["Apple", "Banana", "Mango", "Grapes", "Orange"] 
-print(fruits[1:4]) 
-print(fruits[ : 3]) 
-print(fruits[-4:]) 
-print(fruits[-3:-1]) 
+
+class ArrayStack:
+    def __init__(self):
+        self._items = []
+
+    def push(self, item):
+        pass
+
+    def pop(self):
+        pass
+
+    def peek(self):
+        pass
+
+    def is_empty(self):
+        pass
+
+    def __len__(self):
+        pass
