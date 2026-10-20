@@ -13,3 +13,10 @@ class ArrayStack:
         if self.is_empty():
             raise IndexError("pop from empty stack")
         return self._items.pop()
+    
+    def peek(self):
+        if self.is_empty():
+            raise IndexError("peek from empty stack")
+        return self._items[-1] 
+    
+    
