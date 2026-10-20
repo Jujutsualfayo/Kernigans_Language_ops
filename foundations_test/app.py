@@ -19,4 +19,20 @@ class ArrayStack:
             raise IndexError("peek from empty stack")
         return self._items[-1] 
     
+    def __len__(self):
+        return len(self._items)
+    
+    
+stack = ArrayStack()
+
+stack.push(10)
+stack.push(20)
+stack.push(30)
+
+print("Length:", len(stack))
+print("Top item:", stack.peek())
+print("Removed:", stack.pop())
+print("New top:", stack.peek())
+print("New length:", len(stack))
+print("Empty:", stack.is_empty())
     
