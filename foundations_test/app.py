@@ -28,5 +28,7 @@ try:
     stack.peek()
 except IndexError:
     print("It was a success, but we got an empty stack")
+else:
+    raise AssertionError("Test failed")
     
         
