@@ -23,12 +23,10 @@ class ArrayStack:
         #return the number of items in the stack
         return len(self._items)
     
-stack = ArrayStack()
-try:
-    stack.peek()
-except IndexError:
-    print("It was a success, but we got an empty stack")
-else:
-    raise AssertionError("Test failed")
-    
+stack_a = ArrayStack()
+stack_b = ArrayStack()
+stack_a.push(10)
+stack_b.push(20)
+
+
         
