@@ -20,6 +20,7 @@ class ArrayStack:
     
 stack = ArrayStack()
 stack.push(42)
+stack.pop()
 
 print(len(stack) == 0)
 
