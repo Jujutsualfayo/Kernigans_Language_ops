@@ -13,17 +13,20 @@ class ArrayStack:
     
     def is_empty(self):
         return len(self._items) == 0
+    
+    def peek(self):
+     if self.is_empty():
+        raise IndexError("Peek at an empty stack")
+     return self._items[-1]
         
     def __len__(self):
         #return the number of items in the stack
         return len(self._items)
     
 stack = ArrayStack()
-stack.push(42)
-stack.pop()
-
-print(len(stack) == 0)
-
-
+try:
+    stack.peek()
+except IndexError:
+    print("It was a success, but we got an empty stack")
     
         
