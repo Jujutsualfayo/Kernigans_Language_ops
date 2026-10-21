@@ -28,5 +28,16 @@ stack_b = ArrayStack()
 stack_a.push(10)
 stack_b.push(20)
 
+print(len(stack_a)) == 1
+print(len(stack_b)) == 1
+
+try:
+    stack_a.peek()
+    stack_b.peek()
+except IndexError:
+    print("Test passed, hit an empty stack")
+
+
+
 
         
