@@ -36,6 +36,8 @@ try:
     stack_b.peek()
 except IndexError:
     print("Test passed, hit an empty stack")
+else:
+    raise AssertionError("Test failed")
 
 
 
