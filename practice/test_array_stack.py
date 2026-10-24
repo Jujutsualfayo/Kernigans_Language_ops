@@ -19,4 +19,15 @@ def test_pop_returns_last_item():
 
     assert removed == 30
     assert len(stack) == 2
+def test_peek_does_not_remove_item():
+    stack = ArrayStack()
+    stack.push(10)
+    stack.push(20)
+    stack.push(30)
+
+    result = stack.peek()
+
+    assert result == 30
+    assert len(stack) == 3
+    assert stack.peek() == 30
 
